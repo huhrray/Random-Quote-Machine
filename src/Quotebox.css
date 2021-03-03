@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s;
+}
+
+#quote-box {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+#text{
+    width :80%;
+    height: 70%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:10%;
+    box-sizing: border-box;
+    overflow: auto;
+    transition: color 2s;
+  
+}
+
+#author {
+    width:80%;
+    height: 10%;
+    font-size: 1rem;
+    text-align: center;
+    transition: color 2s;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+    }
+    50%{
+        opacity:.5;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+#button-box{
+    display: flex;
+    justify-content: space-between;
+    width :90%;
+    height: 20%;
+    margin: 1rem;
+    border: none;
+    transition: color 2s;
+}
+
+#tweet-quote{
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    transition: color 2s;
+
+}
+
+#new-quote{
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    width: 8vw;
+    height: 5vh; 
+    text-align: center;
+    box-shadow: none;
+    transition: background-color 2s;
+}
